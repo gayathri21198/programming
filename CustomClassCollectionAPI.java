@@ -126,47 +126,6 @@ class CustomClassCollectionApi{
               }
              break;
 
-             case 3:
-             System.out.println("Enter the ID of the computer in which the contents must be updated");
-             String id3=s.next();
-             for(Object obj1:list)
-             {
-             	if(obj1 instanceof Computer)
-             	{
-             		if(id3.equals(((Computer)obj1).getid()))
-             		{
-             			System.out.println("Enter the choice which parameter to be updated 1. brand 2.colour 3.hddsize 4.ramsize");
-             			int chh=s.nextInt();
-             			if(chh==1)
-             			{
-             				System.out.println("Enter the brand");
-             				String brand2=s.next();
-             				list.getbrand().setbrand(brand2);
-             			}
-             			if(chh==2)
-             			{
-             				System.out.println("Enter the colour");
-             				String colour2=s.next();
-             				list.getcolour().setcolour(colour2);
-
-             			}
-             			if(chh==3)
-             			{
-             				System.out.println("Enter the hddsize");
-             				int hddsize2=s.nextInt();
-             				list.gethddsize().sethddsize(hddsize2);
-             			}
-             			if(chh==4)
-             			{
-             				System.out.println("Enter the ramsize");
-             				int ramsize2=s.nextInt();
-             				list.getramsize().setramsize(ramsize2);
-             			}
-             		}
-             	}
-             }
-
-
 
             default:
             System.out.println("there is no computer");
