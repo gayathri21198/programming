@@ -19,7 +19,7 @@ public class Logic extends HttpServlet {
 		
 		String firstname = request.getParameter("fname");
 		String lastname = request.getParameter("lname");
-		
+		String age = request.getParameter("age");
 		System.out.println("Name of the student : " + firstname + lastname);
 		String gender = request.getParameter("Gender");
 		
@@ -39,7 +39,8 @@ public class Logic extends HttpServlet {
             
         PrintWriter out = response.getWriter(); 
         out.println("Name of the student : " + firstname + " " + lastname);
-		out.println("Gender : " +gender);	
+		out.println("Gender : " +gender);
+		out.println("Age : " +age);
         out.println("Department : " + dept);
 		
 		String subject[] = request.getParameterValues("subjects");
